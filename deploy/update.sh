@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# Update script is used to update the code on the server whenever we make a change
 
 set -e
 

@@ -23,6 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '0)%u=7lry$&98!*8-s6m*_f6&iggf_%_-$wy6p3ibub!8*!x@9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+#DEBUG = True
+
+# Make the following changes to the logic to the above DEBUG = True code for it
+# to be disabled on production mode and enabled on the local machine
 DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 
 ALLOWED_HOSTS = ['ec2-18-224-181-161.us-east-2.compute.amazonaws.com','127.0.0.1']
@@ -124,4 +128,6 @@ STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'profiles_api.UserProfile'
 
+# Add a static route to the bottom of the configuration - This is the location
+# where Django will store all of the static files when we run our collect static command
 STATIC_ROOT = 'static/'
