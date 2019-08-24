@@ -29,7 +29,7 @@ SECRET_KEY = '0)%u=7lry$&98!*8-s6m*_f6&iggf_%_-$wy6p3ibub!8*!x@9'
 # to be disabled on production mode and enabled on the local machine
 DEBUG = bool(int(os.environ.get('DEBUG', 1)))
 
-ALLOWED_HOSTS = ['ec2-18-224-181-161.us-east-2.compute.amazonaws.com','127.0.0.1']
+ALLOWED_HOSTS = ['ec2-13-233-198-56.ap-south-1.compute.amazonaws.com','127.0.0.1']
 
 
 # Application definition
